@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold" href="#">M.Ridwansyah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#file">File</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="home container">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-semibold">Hi! I am</h3>
+                <h1 class="fw-bold">Muhammad Ridwansyah</h1>
+                <p>I am Fullstack development and Nework Engineer based in Indonesia</p>
+                <a class="btn button" href="merah.png" download>Resume</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <img src="merah.png" alt="Potrait">
+            </div>
+        </div>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark">More Info</div>
+            <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
+        </a>
+    </section>
+    <section id="about" class="about container">
+        <p class="text ">I am a graduate of North Sumatra Pancabudi University, majoring in Computer Science. fluent verbal and
+            written english comunication skill. After graduating from college, I worked on a contract basis as an Operations
+            Directorate Assurance Technician at PT Telkom Akses for 3 years. and worked as Administration Monitoring
+            ATM/CRM at PT Bringin Gigantara (BRI Cash) from 2020-2023. I am sure, I will be the right candidate based
+            on my skills and experience. I am someone who quickly understands something and I have good motivation.
+            I am proficient in running various computer software programs, including Microsoft Word, Excel, Access and
+            PowerPoint. I can work effectively under pressure and develop good communication skills through my work
+            experience.</p>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <img class="logo" src="images/telkomakses.png" alt="logo telkomakses">
+                        <h5>PT Telkom Akses</h5>
+                        <p>Operations Directorate Assurance Technician (Jun 2016-Nov 2018)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">I am a provisioning technician and assurance technician at PT
+                    Telkom Akses. Provisioning technician is indihome new installation and assurance technician is repairing to indihome customer</p>
+                    <p class="about-exp-item-detail">
+                        • Ensuring/repairing cable and telephone internet.rv networks if they are damaged <br>
+                        • Execute the code of conduct <br>
+                        • Help colleagues when experiencing difficulties <br>
+                        • Resolving and responding to complaints in accordance with applicable regulations</p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <img class="logo" src="images/bgi.png" alt="logo bgi">
+                        <h5>PT Bringin Gigantara</h5>
+                        <p>Admin Monitoring ATM/CRM (2021 - 2023)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail"> Admin monitoring is to monitor all problems with atm such as money
+                    debited / torn money / money jammed / atm dead / atm can not get out
+                    of money. the atm card cannot go out and monitor the balance at the atm
+                    </p>
+                    <p class="about-exp-item-detail"> • Operate Ms.Office <br>
+                        • Sharing ATM/CRM problems with Custudy <br>
+                        • Making Custudy assignment letters <br>
+                        • Arranging data/files that have been completed <br>
+                        • Performing ATM/CRM key opname <br>
+                        • Monitoring ATM/CRM balances <br>
+                        • Reconciliation of ATM return balances with physical (money) at ATMs
+                    </p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <img class="logo" src="images/fullstack.png" alt="logo fullstack">
+                        <h5>Full-Stack Development</h5>
+                        <p>Freelance (2023 - Now)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">full-stack developer is a technology expert who is able to improve the front-end and back-end of an application</p>
+                <p class="about-exp-item-detail">• Frond end dev used: html,css,js .framework: GitHub, jQuery, bootstrap <br>
+                    • Backend dev used: php, javascript, Pyton Framework: Laravel Node.JS  <br></p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <a href="#education" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark">More Info</div>
+            <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
+        </a>
+    </section>
+    <section id="education" class="education container">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <img class="logo" src="images/smktelkom.png" alt="logo smktelkom">
+                        <h5>vocational school</h5>
+                        <p>SMK Telkom Medan</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Computer Network Engineering</p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <img class="logo" src="images/pancabudi.png" alt="logo pancabudi">
+                        <h5>College</h5>
+                        <p>Pancabudi University</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">S1, Computer Science, 3.41
+                    Thesis/Final Project: “ Prototype Penyiram Kebun Secara Otomatis Berbasis Arduino ”
+                    </p>
+            </div>
+            
+        </div>      
+    </section>
+    <section id="file" class="file container" >
+        <a href="#file" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark">More Info</div>
+            <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
+        </a>
+        <div class="about-exp-item">
+            <div class="about-exp-item-header">
+                <div>
+                    <h5> Aplication File</h5>
+                </div>
+                <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <button class="about-exp-item-detail" class="btn button"> <a class="btn button " href="https://drive.google.com/drive/folders/1wU_YKNyv5Ca_7FP6gvX6nR_-RXwJeG6p?usp=sharing" >Resume</a></button>
+            <button class="about-exp-item-detail" class="btn button"> <a class="btn button " href="https://drive.google.com/drive/folders/1MgmZqgJM_iUhjoXsMSWjKOmw1-RatlHt?usp=sharing">Certificate</a></button>
+            <button class="about-exp-item-detail" class="btn button"> <a class="btn button " href="https://drive.google.com/drive/folders/1UaRVyx1VGrRuv--KUtjE24hbkklhLbMi?usp=sharing">Photo </a></button>
+            <button class="about-exp-item-detail" class="btn button"> <a class="btn button " href="https://drive.google.com/drive/folders/1WXipg9Hqzf47ihBGc8btgG6UznKb1bNQ?usp=sharing">Certificate College </a></button>
+            <button class="about-exp-item-detail" class="btn button"> <a class="btn button " href="https://drive.google.com/file/d/1SS3BnyPC9z8BO7MGuuxMAx3qPSnij0bE/view?usp=sharing" >Aplication Letter</a></button>
+        </div>
+    </section>
+    <section id="work" class="work container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-md-5">
+                <button class="btn"> <a class="btn button "  href="https://gitridwan13.github.io/Coder/" >Mini Project Frond End</a></button>
+                <button class="btn"> <a class="btn button "  href="https://gitridwan13.github.io/university/" >Mini Project Frond End</a></button>
+            </div>
+            <div class="col-12 col-md-6 work-img">
+                <div id="work-1" class="work-img-item">    
+                    <img src="images/work-1.png" alt="work 1" >
+                </div>
+                <div id="work-2" class="work-img-item">    
+                    <img src="images/work-2.png" alt="work 2" >
+                </div>
+                <div id="work-3" class="work-img-item">    
+                    <img src="images/work-3.png" alt="work 3" >
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-lg-6">
+                    <p class="text"> i hope you will take the time to view my resume. With my qualifications, I'm sure I can contribute to your
+                        company. Please contact me below I look forward to hearing from you soon. Thank you 
+                       for your time and consideration </p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Facebook.svg" alt="facebook icon">
+                        <p class="mb-0 ms-2">Muhammad Ridwansyah</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Instagram.svg" alt="instagram icon">
+                        <p class="mb-0 ms-2">@rdwnsyh.13</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/whatsapp-logo-thin.svg" alt="whatsapp icon">
+                        <p class="mb-0 ms-2">0813 6327 1448</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                      <label for="inp_email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inp_email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="inp_subject" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inp_message" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="inp_message" placeholder="Your Message" required>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn button">Submit</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
